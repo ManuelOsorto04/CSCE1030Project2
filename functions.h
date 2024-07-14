@@ -1,6 +1,6 @@
 #include <iostream>
 using namespace std;
-
+//whgat
 //Step 1- declare global enumeration constant
 enum Choices{displayLeft=1,displayRight,Guess,Reset,Exit};
 
