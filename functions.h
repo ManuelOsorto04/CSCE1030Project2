@@ -1,7 +1,8 @@
 #include <iostream>
 using namespace std;
 
-
+//Step 1- declare global enumeration constant
+const enum Choices(displayLeft=1,displayRight,Guess,Reset,Exit);
 
 string getName();//gets name from the user
 void genShowMatrix();//generates visible matrix
