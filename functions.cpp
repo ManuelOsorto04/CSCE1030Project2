@@ -56,3 +56,43 @@ void genHideMatrix(int Matrix[][cols],int left,int right)
         }
     }
 }
+
+//Step 5 - display visible array
+void showMatrix(int Matrix[][cols]){
+    for(int i=0;i<rows;++i){
+        for(int j=0;j<cols;++j){
+            cout<<Matrix[i][j]<<"\t";
+        }
+        cout<<endl;
+    }
+}
+
+//Step6 - Display left
+void setDisplayLeft(int left,int right,int& display1,int display2){
+    if(display2!=-1){
+        cout<<"The right boundary is already displayed.\n";
+    }
+    else if(display1!=-1){
+        cout<<"The left boundary is already displayed.\n";
+    }
+    else{
+        display1=left;
+        cout<<"Now if correctly guessed. You earn ONLY 1 point.\n";
+        cout<<"You will also lose 10 points if guessed WRONG.\n";
+    }
+}
+
+//Step 7 - Display right
+void setDisplayRight(int left,int right,int& display2,int display1){
+    if(display1!=-1){
+        cout<<"The left boundary is alrady displayed.\n";
+    }
+    else if(display2!=-1){
+        cout<<"The right boundary is already displayed.\n";
+    }
+    else{
+        display2=right;
+        cout<<"Now if correctly guessed. You earn ONLY 1 point.\n";
+        cout<<"You will also lose 10 points if guessed WRONG.\n";
+    }
+}
