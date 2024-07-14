@@ -3,15 +3,16 @@ using namespace std;
 //whgat
 //Step 1- declare global enumeration constant
 enum Choices{displayLeft=1,displayRight,Guess,Reset,Exit};
+const int rows=5,cols=5;
 
 //Step 2- Get the player's name
 string getName();//gets name from the user
 
+//Step 3- Visible Array
+void genShowMatrix(int Matrix[][cols]);//generates visible matrix
 
-void genShowMatrix();//generates visible matrix
-
-
-void genHideMatrix();//generates hidden matrix
+//Step 4- Hidden Array
+void genHideMatrix(int Matrix[][cols],int,int);//generates hidden matrix
 
 
 void showMatrix(); //displays matrix

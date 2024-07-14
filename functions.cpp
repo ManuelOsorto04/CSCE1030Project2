@@ -37,3 +37,22 @@ string getName(){
     //cout<<name<<endl;
     return name;
 }
+
+//Step 3 - Visible Array
+void genShowMatrix(int Matrix[][cols]){
+    for(int i=0;i<rows;++i){
+        for(int j=0;i<cols;++j){
+            Matrix[i][j]=-1;
+        }
+    }
+}
+
+//Step 4- Hidden Array
+void genHideMatrix(int Matrix[][cols],int left,int right)
+{
+    for(int i=0;i<rows;++i){
+        for(int j=0;j<cols;++j){
+            Matrix[i][j]=rand()%(right-left+1)+left;
+        }
+    }
+}
